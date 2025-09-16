@@ -2,10 +2,10 @@
 --@author Astric Union
 --@shared
 
---@include astricunion/libs/sounds.txt
---@include astricunion/libs/light.txt
-require("astricunion/libs/sounds.txt")
-require("astricunion/libs/light.txt")
+--@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/sounds.lua as sounds
+--@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/light.lua as light
+require("sounds")
+require("light")
 
 
 -- To add filter --
@@ -16,19 +16,19 @@ function eyeTrace(ply, filter)
 end
 
 if SERVER then
-    --@include astricunion/libs/movement.txt
-    --@include astricunion/libs/guns.txt
-    --@include astricunion/libs/fractional_timers.txt
-    --@include astricunion/libs/astrobase.txt
-    --@include astricunion/holos/astro_trooper_holos.txt
+    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/movement.lua as movement
+    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/guns.lua as guns
+    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/fractional_timers.lua as fractional_timers
+    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/astrobase.lua as astrobase
+    --@include https://raw.githubusercontent.com/AstricUnion/AstroBots/refs/heads/main/holos/astro_trooper_holos.lua as holos
 
-    require("astricunion/libs/movement.txt")
-    require("astricunion/libs/guns.txt")
-    require("astricunion/libs/fractional_timers.txt")
-    require("astricunion/libs/astrobase.txt")
+    require("movement")
+    require("guns")
+    require("fractional_timers")
+    require("astrobase")
 
     -- THIS FILE CREATES HOLOGRAMS --
-    require("astricunion/holos/astro_trooper_holos.txt")
+    require("holos")
     ---------------------------------
 
     -- States
@@ -325,8 +325,8 @@ if SERVER then
     end)
 
 else
-    --@include astricunion/libs/ui.txt
-    require("astricunion/libs/ui.txt")
+    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/ui.lua as ui
+    require("ui")
 
     local astroHealth = 1000
     local blasterLeftAmmo = 4
