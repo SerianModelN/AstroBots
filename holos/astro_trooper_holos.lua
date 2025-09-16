@@ -3,8 +3,8 @@
 --@server
 
 --[[ Holos ]]--
---@include astricunion/libs/holos.txt
-require("astricunion/libs/holos.txt")
+--@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/holos.lua as holos
+require("holos")
 
 body = {
     base = {
