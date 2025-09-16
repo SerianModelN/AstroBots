@@ -18,13 +18,13 @@ end
 if SERVER then
     --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/movement.lua as movement
     --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/guns.lua as guns
-    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/fractional_timers.lua as fractional_timers
+    --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/ftimers.lua as ftimers
     --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/astrobase.lua as astrobase
     --@include https://raw.githubusercontent.com/AstricUnion/AstroBots/refs/heads/main/holos/astro_trooper_holos.lua as holos
 
     require("movement")
     require("guns")
-    require("fractional_timers")
+    require("ftimers")
     require("astrobase")
 
     -- THIS FILE CREATES HOLOGRAMS --
