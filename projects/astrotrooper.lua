@@ -20,7 +20,7 @@ if SERVER then
     --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/guns.lua as guns
     --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/ftimers.lua as ftimers
     --@include https://raw.githubusercontent.com/AstricUnion/Libs/refs/heads/main/astrobase.lua as astrobase
-    --@include https://raw.githubusercontent.com/AstricUnion/AstroBots/refs/heads/main/holos/astro_trooper_holos.lua as holos
+    --@include https://raw.githubusercontent.com/AstricUnion/AstroBots/refs/heads/main/holos/astro_trooper_holos.lua as astroholos
 
     require("movement")
     require("guns")
@@ -28,7 +28,7 @@ if SERVER then
     require("astrobase")
 
     -- THIS FILE CREATES HOLOGRAMS --
-    require("holos")
+    require("astroholos")
     ---------------------------------
 
     -- States
